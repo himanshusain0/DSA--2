@@ -16,7 +16,7 @@ public class BinarySearch {
                 high= mid-1;
             }
         }
-        return 0;
+        return -1;
     }
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class BinarySearch {
         }
         int x = sc.nextInt();
        int result = binarySearch(arr,x);
-        if(result==0){
+        if(result==-1){
             System.out.println("element  is not present in array ");
         }else{
             System.out.println("element is present at indexv " + result);
